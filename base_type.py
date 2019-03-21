@@ -21,6 +21,7 @@
    # print( afloat)
     # print(type(afloat))
 
+
 # def str_demo():
     # c = 'hellow'
     # d = 'world'
@@ -47,7 +48,6 @@ def str_demo2():
 if __name__ == '__main__':
     str_demo2()
 
-k
 
 
 
