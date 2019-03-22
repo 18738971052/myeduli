@@ -35,8 +35,9 @@
     # result = add(1.1,2.2)
     #float_demo()
     # print(float)
-
+blist = [2,3,5,9,7,25]
 def str_demo2():
+    dlist = [5,6,9]
     a= 'hello '
     b= 250
     print('a=%s b=%s'%(a,b))
@@ -45,9 +46,12 @@ def str_demo2():
     print(type(s))
     print(a+s)
 
-if __name__ == '__main__':
-    str_demo2()
 
+if __name__ == '__main__':
+    clist = [2,5,6]
+    print(blist)
+    print(clist)
+    print(dlist)
 
 
 
