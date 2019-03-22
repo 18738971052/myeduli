@@ -22,7 +22,28 @@ def int_demo():
     #打印 aint 的类型； type（aint）：获取aint的类型
     print(type(aint))
 
-#声明一个 str 的
+#声明一个 str_demo 的方法
+def str_demo():
+    # 声明astr 变量 ，并赋值  1
+    astr = '1'
+    #打印 astr 的值
+    print(astr)
+    # 打印 astr 的类型， type（astr): 获取astr 的类型
+    print(type(astr))
+
+# 演示字符串拼接 ： +
+def str_demo():
+    a='hello'
+    b='world'
+    return a+b
+
+# 字符串拼接 ：%s
+def str_demo2():
+    a='hello'
+    b= 250
+    #print(a+str(b)
+    print('a 是 ： %s;b 是 : %s'%(a,b))
+
 
 
 
