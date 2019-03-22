@@ -48,10 +48,11 @@ def str_demo2():
 
 
 if __name__ == '__main__':
-    clist = [2,5,6]
-    print(blist)
-    print(clist)
-    print(dlist)
+    #clist = [2,5,6]
+    #print(blist)
+    #print(clist)
+    #print(dlist)
+    print(len(blist))
 
 
 
