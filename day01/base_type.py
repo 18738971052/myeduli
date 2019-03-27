@@ -15,31 +15,31 @@
 # ctrl + shift + K  push 代码
 
 # 声明一个int_demo 方法
-def int_demo():
-    # 声明aint变量 , 并赋值 1
-    aint = 1
-    # 打印 aint 的值
-    print(aint)
-    # 打印 aint 的 类型; type(aint): 获取aint的类型
-    print(type(aint))
-
-
-# 声明一个 str_demo 方法
-def str_demo():
-    # 声明astr变量 , 并赋值 '1'
-    astr = '1'
-    # 打印 astr 的值
-    print(astr)
-    # 打印 astr 的 类型; type(astr): 获取astr的类型
-    print(type(astr))
-
-    # 不写
-    print('--------------')
-    astr = 1
-    # 打印 astr 的值
-    print(astr)
-    # 打印 astr 的 类型; type(astr): 获取astr的类型
-    print(type(astr))
+# def int_demo():
+#     # 声明aint变量 , 并赋值 1
+#     aint = 1
+#     # 打印 aint 的值
+#     print(aint)
+#     # 打印 aint 的 类型; type(aint): 获取aint的类型
+#     print(type(aint))
+#
+#
+# # 声明一个 str_demo 方法
+# def str_demo():
+#     # 声明astr变量 , 并赋值 '1'
+#     astr = '1'
+#     # 打印 astr 的值
+#     print(astr)
+#     # 打印 astr 的 类型; type(astr): 获取astr的类型
+#     print(type(astr))
+#
+#     # 不写
+#     print('--------------')
+#     astr = 1
+#     # 打印 astr 的值
+#     print(astr)
+#     # 打印 astr 的 类型; type(astr): 获取astr的类型
+#     print(type(astr))
 
 # 演示字符串拼接 : +
 def str_demo1():
@@ -82,7 +82,7 @@ def float_demo():
     print(type(afloat))
 
 if __name__ == '__main__':
-    str_demo3()
+    print(str_demo1())
     # str_demo2()
     # print(str_demo1())
     # float_demo()
