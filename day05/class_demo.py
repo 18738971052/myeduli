@@ -2,16 +2,16 @@
 # object 对象/或者所有类的父类
 
 
-class human(object):
+class Human(object):
     def __init__(self,name,age,sex):
         self.name=name
         self.age=age
         self.sex = sex
 
-    def myinfo(self):
+    def myInfo(self):
         print('我叫%s,我今年%s岁,%s'%(self.name,self.age,self.sex))
 if __name__ == '__main__':
-    human = human('ljw',25,'男')
+    human = Human('ljw',25,'男')
     print(type(human))
     human.myinfo()# class 类
 # object 对象 / 或者所有类的父类
@@ -70,7 +70,7 @@ class TesTer(human):
         print(self.name)
         print('we')
 if __name__ == '__main__':
-    TesTer.zhixing()
+
 
 
 
