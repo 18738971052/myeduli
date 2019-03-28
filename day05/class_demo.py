@@ -13,7 +13,7 @@ class Human(object):
 if __name__ == '__main__':
     human = Human('ljw',25,'男')
     print(type(human))
-    human.myinfo()# class 类
+    human.myInfo()# class 类
 # object 对象 / 或者所有类的父类
 
 # 声明类的语法: class : 就是声明一个类;  Human : 类的名字;  ( ):括号里面填 这个类的父类
@@ -69,20 +69,3 @@ class TesTer(human):
     def zhixing(self):
         print(self.name)
         print('we')
-if __name__ == '__main__':
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
