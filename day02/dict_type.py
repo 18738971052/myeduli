@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     # dict --> str
     json_dumps = json.dumps(adict)
-    print(type(dumps))
+    print(type(json_dumps))
 
 
 import json
@@ -72,18 +72,18 @@ if __name__ == '__main__':
     # 打印 adict 字典中 key 为 name 的值
     # print(adict['name'])
 
-<<<<<<< Updated upstream
+# <<<<<<< Updated upstream
     # str --> dict
     pass
     # dict --> str  字典类型转换为 字符类型
     # dumps = json.dumps(adict)
     # print(type(dumps))
-=======
+# =======
     # dict --> str
     dumps = json.dumps(adict)
     print(type(dumps))
 
->>>>>>> Stashed changes
+# >>>>>>> Stashed changes
 
 
 

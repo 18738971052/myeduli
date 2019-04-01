@@ -23,4 +23,4 @@ def read_excel(file):
 
 
 if __name__ == '__main__':
-    read_excel("../test.xlsx")
+    read_excel("../docment/test.xlsx")
