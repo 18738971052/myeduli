@@ -24,6 +24,7 @@ class TestFirstUIdemo:
         #打开网址
         driver.get("http://192.168.60.132/#/login")
         #输入用户名
+
         username = driver.find_element_by_xpath('//input [@name="username"]')
         username.clear()
         username.send_keys('admin')
