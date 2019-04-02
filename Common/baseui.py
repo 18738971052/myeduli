@@ -7,26 +7,22 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 
-driver=None
+
 
 def shot(func):
     def function(*args, **kwargs):
-        print(type(args[1]))
-        allure.attach(driver.get_screenshot_as_png(), args[1] + '之前', allure.attachment_type.PNG)
+        allure.attach(args[0].driver.get_screenshot_as_png(), args[1] + '之前', allure.attachment_type.PNG)
 
         func(*args, **kwargs)
-        allure.attach(driver.get_screenshot_as_png(), args[1] + '之后', allure.attachment_type.PNG)
+        allure.attach(args[0].driver.get_screenshot_as_png(), args[1] + '之后', allure.attachment_type.PNG)
 
     return function
 
 
 class baseUI():
 
-    def __init__(self,driver1):
-        self.driver = driver1
-        global driver
-        print(type(driver1))
-        driver = self.driver
+    def __init__(self,driver):
+        self.driver = driver
 
     def local_element(self,xpath):
        return WebDriverWait(self.driver, 5, 0.5).until(EC.presence_of_element_located((By.XPATH,xpath)))
