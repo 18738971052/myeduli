@@ -37,27 +37,156 @@ class TestFirstUIdemo:
         login = driver.find_element_by_xpath('(//span[contains(text(),"登录")])[1]')
         login.click()
         time.sleep(2)
+        # 点击商品
+        shangpin = driver.find_element_by_xpath('//span[contains(text(),"商品")]')
+        shangpin.click()
+        time.sleep(2)
+        #点击添加商品
+        tjsp = driver.find_element_by_xpath('//span[contains(text(),"添加商品")]')
+        tjsp.click()
+        time.sleep(2)
+        #点击商品分类下拉框
+        spxl = driver.find_element_by_xpath('//span[@class="el-cascader__label"]')
+        spxl.click()
+        time.sleep(2)
+        #点击服装//li[@aria-expanded="true"]
+        #点击外套//li[contains(text(),"外套")]
+        #点击商品名称//div[@class="el-input el-input--small"]
+        #点击副标题//div[@class="el-form-item is-error is-required el-form-item--small"][2]
+        #点击商品品牌
+        #点击商品介绍
+        #点击商品介绍
+        #点击货号
+        #点击售价
+        #点击市场价
+        #点击商品库存
+        #计量单位
+        #点击商品重量
+        #排序点击排序
+
         #点击营销
-        yingxiao = driver.find_element_by_xpath('//span[contains(text(),"营销")]')
-        yingxiao.click()
-        time.sleep(2)
-        #点击优惠劵列表
-        youhui = driver.find_element_by_xpath('//span[contains(text(),"优惠券列表")]')
-        youhui.click()
-        time.sleep(2)
-        #输入优惠券名称
-        mingcheng = driver.find_element_by_xpath('//input[@placeholder="优惠券名称"]')
-        mingcheng.clear()
-        mingcheng.send_keys('小米手机')
-        time.sleep(2)
-        #点击查询搜索
-        sousuo = driver.find_element_by_xpath('//span[contains(text(),"查询搜索")]')
-        sousuo.click()
-        time.sleep(2)
+        # yingxiao = driver.find_element_by_xpath('//span[contains(text(),"营销")]')
+        # yingxiao.click()
+        # time.sleep(2)
+        # #点击优惠劵列表
+        # youhui = driver.find_element_by_xpath('//span[contains(text(),"优惠券列表")]')
+        # youhui.click()
+        # time.sleep(2)
+        # #输入优惠券名称
+        # mingcheng = driver.find_element_by_xpath('//input[@placeholder="优惠券名称"]')
+        # mingcheng.clear()
+        # mingcheng.send_keys('小米手机')
+        # time.sleep(2)
+        # #点击查询搜索
+        # sousuo = driver.find_element_by_xpath('//span[contains(text(),"查询搜索")]')
+        # sousuo.click()
+        # time.sleep(2)
         # 断言
-        assertions.assert_in_text(driver.page_source,'首页')
+        #assertions.assert_in_text(driver.page_source,'首页')
         #退出浏览器
         #driver.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
