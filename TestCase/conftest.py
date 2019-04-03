@@ -1,12 +1,9 @@
+from selenium import webdriver
 import os
-
 import pytest
-from selenium.webdriver.android import webdriver
-
-
 @pytest.fixture(scope="session")
 def driver():
-    driver_path = os.path.join(os.path.dirname(__file__), "../../../chromedriver/chromedriver.exe")
+    driver_path = os.path.join(os.path.dirname(__file__), "../chromedriver/chromedriver.exe")
     # 打开浏览器
     dr = webdriver.Chrome(driver_path)
     dr.maximize_window()  # 最大化浏览器
@@ -15,14 +12,4 @@ def driver():
     dr.implicitly_wait(10)#元素查找超时时间10s
     yield dr
     dr.quit()
-
-
-
-
-
-
-
-
-
-
 
