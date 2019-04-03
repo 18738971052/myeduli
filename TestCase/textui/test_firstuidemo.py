@@ -73,11 +73,16 @@ class TestFirstUIDemo:
         #点击购物用券
         base.click("点击购物用券","//span[contains(text(),'购物赠券')]")
         #输入优惠券名称
-
+        base.send_keys("输入优惠券名称","//div[@class='input-width el-input el-input--small']/input","优惠")
         #选择适用平台
+        base.click("选择适用平台","(//div[@class='el-input el-input--small el-input--suffix'])[2]")
+        #点击全平台
+        base.click("点击全平台","//li[@class='el-select-dropdown__item selected']")
         #输入总发行量
         #输入面额
-        #输入每人限领
+        base.send_keys("输入面额", "//input[@placeholder='面值只能是数值，限2位小数']")
+
+        #输入每人限领(//input[@placeholder="只能输入正整数"])[2]
         #输入使用门槛
         #输入有效期
         #填写备注
