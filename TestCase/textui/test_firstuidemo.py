@@ -234,6 +234,25 @@ class TestFirstUIDemo:
         time.sleep(3)
 
 
+    def test_demo6(self,driver):
+        #打开网址
+        driver.get("http://192.168.60.132/#/login")
+        base = baseUI(driver)
+        #输入用户名//input[@name='username']
+        #输入密码//input[@name='password']
+        #点击确定//span[contains(text(),'登录')]
+        #点击订单(//span[contains(text(),'订单')])[1]
+        #点击订单列表//span[contains(text(),'订单列表')]
+        #点击订单状态//label[contains(text(),'订单状态：')]/following-sibling::div//input
+        #点击未发货//span[contains(text(),'待发货')]
+        #点击查询搜索//span[contains(text(),'查询搜索')]
+        #点击全选
+        #点击批量操作
+        #点击批量发货
+        #点击确定
+        #循环填写配送方式
+        #循环填写订单编号
+        #点击确定
 
 
 
